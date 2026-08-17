@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hónapok és Évszakok — Tanuljunk Magyarul!</title>
+<meta name="description" content="Ismerd meg a magyar hónapokat, évszakokat és a hét napjait.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Ugrás a tartalomhoz</a>
+
+<header class="site-header">
+  <div class="container">
+    <a class="logo" href="index.html">
+      <svg class="logo-flower" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="20" cy="20" r="5" fill="var(--yellow)"/>
+        <path d="M20 15 C16 15 15 10 20 6 C25 10 24 15 20 15Z" fill="var(--paprika)"/>
+        <path d="M20 25 C16 25 15 30 20 34 C25 30 24 25 20 25Z" fill="var(--paprika)"/>
+        <path d="M15 20 C15 16 10 15 6 20 C10 25 15 24 15 20Z" fill="var(--green)"/>
+        <path d="M25 20 C25 16 30 15 34 20 C30 25 25 24 25 20Z" fill="var(--green)"/>
+      </svg>
+      Tanuljunk Magyarul!
+    </a>
+    <nav class="main-nav" aria-label="Fő navigáció">
+      <a href="index.html">🏠 Főoldal</a>
+      <a href="abc.html">🔤 ABC</a>
+      <a href="numbers.html">🔢 Számok</a>
+      <a href="words.html">🗣️ Szavak</a>
+      <a href="calendar.html" aria-current="page">📅 Hónapok</a>
+    </nav>
+  </div>
+</header>
+
+<div class="folk-border" aria-hidden="true">
+  <svg viewBox="0 0 240 26" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <pattern id="tulipPattern5" width="60" height="26" patternUnits="userSpaceOnUse">
+        <path d="M10 24 C10 16 6 14 6 9 C6 5 10 3 12 3 C14 3 18 5 18 9 C18 14 14 16 14 24 Z" fill="var(--paprika)"/>
+        <circle cx="31" cy="13" r="5" fill="var(--blue)"/>
+        <path d="M46 24 C46 17 42.5 16 42.5 11.5 C42.5 8 46 6 48 6 C50 6 53.5 8 53.5 11.5 C53.5 16 50 17 50 24 Z" fill="var(--green)"/>
+        <circle cx="12" cy="25.5" r="2" fill="var(--yellow)"/>
+      </pattern>
+    </defs>
+    <rect width="240" height="26" fill="url(#tulipPattern5)"/>
+  </svg>
+</div>
+
+<main id="main">
+  <section class="page-section container">
+    <div class="section-intro">
+      <h1>📅 Hónapok &amp; Évszakok</h1>
+      <p>Hungary has four seasons, just like many places. Click any month or day to hear it.</p>
+    </div>
+
+    <div class="season-block season-spring">
+      <h3>🌱 Tavasz <span style="font-weight:400; font-size:0.9rem; color:var(--ink-soft);">(Spring)</span></h3>
+      <div class="tile-grid">
+        <button class="tile" data-word="március"><span class="big-letter" style="font-size:1.4rem;">Március</span><span class="tile-emoji">🌷</span><span class="tile-eng">March</span></button>
+        <button class="tile" data-word="április"><span class="big-letter" style="font-size:1.4rem;">Április</span><span class="tile-emoji">🌦️</span><span class="tile-eng">April</span></button>
+        <button class="tile" data-word="május"><span class="big-letter" style="font-size:1.4rem;">Május</span><span class="tile-emoji">🌼</span><span class="tile-eng">May</span></button>
+      </div>
+    </div>
+
+    <div class="season-block season-summer">
+      <h3>☀️ Nyár <span style="font-weight:400; font-size:0.9rem; color:var(--ink-soft);">(Summer)</span></h3>
+      <div class="tile-grid">
+        <button class="tile" data-word="június"><span class="big-letter" style="font-size:1.4rem;">Június</span><span class="tile-emoji">🌻</span><span class="tile-eng">June</span></button>
+        <button class="tile" data-word="július"><span class="big-letter" style="font-size:1.4rem;">Július</span><span class="tile-emoji">🍉</span><span class="tile-eng">July</span></button>
+        <button class="tile" data-word="augusztus"><span class="big-letter" style="font-size:1.4rem;">Augusztus</span><span class="tile-emoji">🏖️</span><span class="tile-eng">August</span></button>
+      </div>
+    </div>
+
+    <div class="season-block season-autumn">
+      <h3>🍂 Ősz <span style="font-weight:400; font-size:0.9rem; color:var(--ink-soft);">(Autumn)</span></h3>
+      <div class="tile-grid">
+        <button class="tile" data-word="szeptember"><span class="big-letter" style="font-size:1.3rem;">Szeptember</span><span class="tile-emoji">🍎</span><span class="tile-eng">September</span></button>
+        <button class="tile" data-word="október"><span class="big-letter" style="font-size:1.4rem;">Október</span><span class="tile-emoji">🍁</span><span class="tile-eng">October</span></button>
+        <button class="tile" data-word="november"><span class="big-letter" style="font-size:1.4rem;">November</span><span class="tile-emoji">🌧️</span><span class="tile-eng">November</span></button>
+      </div>
+    </div>
+
+    <div class="season-block season-winter">
+      <h3>❄️ Tél <span style="font-weight:400; font-size:0.9rem; color:var(--ink-soft);">(Winter)</span></h3>
+      <div class="tile-grid">
+        <button class="tile" data-word="december"><span class="big-letter" style="font-size:1.4rem;">December</span><span class="tile-emoji">🎄</span><span class="tile-eng">December</span></button>
+        <button class="tile" data-word="január"><span class="big-letter" style="font-size:1.4rem;">Január</span><span class="tile-emoji">⛄</span><span class="tile-eng">January</span></button>
+        <button class="tile" data-word="február"><span class="big-letter" style="font-size:1.4rem;">Február</span><span class="tile-emoji">💝</span><span class="tile-eng">February</span></button>
+      </div>
+    </div>
+
+    <h2 style="text-align:center; margin-top:44px;">🗓️ A hét napjai — Days of the week</h2>
+    <div class="days-row">
+      <button class="tile" data-word="hétfő"><span class="big-letter" style="font-size:1.3rem;">Hétfő</span><span class="tile-eng" style="display:block;">Monday</span></button>
+      <button class="tile" data-word="kedd"><span class="big-letter" style="font-size:1.3rem;">Kedd</span><span class="tile-eng" style="display:block;">Tuesday</span></button>
+      <button class="tile" data-word="szerda"><span class="big-letter" style="font-size:1.3rem;">Szerda</span><span class="tile-eng" style="display:block;">Wednesday</span></button>
+      <button class="tile" data-word="csütörtök"><span class="big-letter" style="font-size:1.2rem;">Csütörtök</span><span class="tile-eng" style="display:block;">Thursday</span></button>
+      <button class="tile" data-word="péntek"><span class="big-letter" style="font-size:1.3rem;">Péntek</span><span class="tile-eng" style="display:block;">Friday</span></button>
+      <button class="tile" data-word="szombat"><span class="big-letter" style="font-size:1.3rem;">Szombat</span><span class="tile-eng" style="display:block;">Saturday</span></button>
+      <button class="tile" data-word="vasárnap"><span class="big-letter" style="font-size:1.2rem;">Vasárnap</span><span class="tile-eng" style="display:block;">Sunday</span></button>
+    </div>
+    <p class="center-note">(These day tiles show the English name right away — click to hear the Hungarian!)</p>
+
+    <div style="text-align:center; margin-top:40px;">
+      <a class="btn" href="index.html">🏠 Vissza a főoldalra! Back to home</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>🌻 Tanuljunk Magyarul! — készült szeretettel gyerekeknek.</p>
+    <p><a href="index.html">Vissza a főoldalra / Back to home</a></p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

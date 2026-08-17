@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Szavak — Tanuljunk Magyarul!</title>
+<meta name="description" content="Tanulj magyar szavakat: színek, állatok, család, étel és köszönések.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Ugrás a tartalomhoz</a>
+
+<header class="site-header">
+  <div class="container">
+    <a class="logo" href="index.html">
+      <svg class="logo-flower" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="20" cy="20" r="5" fill="var(--yellow)"/>
+        <path d="M20 15 C16 15 15 10 20 6 C25 10 24 15 20 15Z" fill="var(--paprika)"/>
+        <path d="M20 25 C16 25 15 30 20 34 C25 30 24 25 20 25Z" fill="var(--paprika)"/>
+        <path d="M15 20 C15 16 10 15 6 20 C10 25 15 24 15 20Z" fill="var(--green)"/>
+        <path d="M25 20 C25 16 30 15 34 20 C30 25 25 24 25 20Z" fill="var(--green)"/>
+      </svg>
+      Tanuljunk Magyarul!
+    </a>
+    <nav class="main-nav" aria-label="Fő navigáció">
+      <a href="index.html">🏠 Főoldal</a>
+      <a href="abc.html">🔤 ABC</a>
+      <a href="numbers.html">🔢 Számok</a>
+      <a href="words.html" aria-current="page">🗣️ Szavak</a>
+      <a href="calendar.html">📅 Hónapok</a>
+    </nav>
+  </div>
+</header>
+
+<div class="folk-border" aria-hidden="true">
+  <svg viewBox="0 0 240 26" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <pattern id="tulipPattern4" width="60" height="26" patternUnits="userSpaceOnUse">
+        <path d="M10 24 C10 16 6 14 6 9 C6 5 10 3 12 3 C14 3 18 5 18 9 C18 14 14 16 14 24 Z" fill="var(--paprika)"/>
+        <circle cx="31" cy="13" r="5" fill="var(--blue)"/>
+        <path d="M46 24 C46 17 42.5 16 42.5 11.5 C42.5 8 46 6 48 6 C50 6 53.5 8 53.5 11.5 C53.5 16 50 17 50 24 Z" fill="var(--green)"/>
+        <circle cx="12" cy="25.5" r="2" fill="var(--yellow)"/>
+      </pattern>
+    </defs>
+    <rect width="240" height="26" fill="url(#tulipPattern4)"/>
+  </svg>
+</div>
+
+<main id="main">
+  <section class="page-section container">
+    <div class="section-intro">
+      <h1>🗣️ Szavak</h1>
+      <p>Choose a topic, then click a card to flip it and hear the Hungarian word.</p>
+    </div>
+
+    <div class="tabs" role="tablist" aria-label="Szókincs témák">
+      <button class="tab-btn" role="tab" data-tab="tab-colors" aria-selected="true">🎨 Színek</button>
+      <button class="tab-btn" role="tab" data-tab="tab-animals" aria-selected="false">🐾 Állatok</button>
+      <button class="tab-btn" role="tab" data-tab="tab-family" aria-selected="false">👨‍👩‍👧 Család</button>
+      <button class="tab-btn" role="tab" data-tab="tab-food" aria-selected="false">🍽️ Étel</button>
+      <button class="tab-btn" role="tab" data-tab="tab-greetings" aria-selected="false">👋 Köszönések</button>
+    </div>
+
+    <!-- COLORS -->
+    <div class="tab-panel active" id="tab-colors">
+      <div class="flash-grid">
+        <div class="flashcard" data-word="piros"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">🔴</span><span class="eng-word">red</span></div><div class="card-face card-back"><span class="hu-word">piros</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+        <div class="flashcard" data-word="narancssárga"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">🟠</span><span class="eng-word">orange</span></div><div class="card-face card-back"><span class="hu-word">narancssárga</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+        <div class="flashcard" data-word="sárga"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">🟡</span><span class="eng-word">yellow</span></div><div class="card-face card-back"><span class="hu-word">sárga</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+        <div class="flashcard" data-word="zöld"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">🟢</span><span class="eng-word">green</span></div><div class="card-face card-back"><span class="hu-word">zöld</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+        <div class="flashcard" data-word="kék"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">🔵</span><span class="eng-word">blue</span></div><div class="card-face card-back"><span class="hu-word">kék</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+        <div class="flashcard" data-word="lila"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">🟣</span><span class="eng-word">purple</span></div><div class="card-face card-back"><span class="hu-word">lila</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+        <div class="flashcard" data-word="rózsaszín"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">💗</span><span class="eng-word">pink</span></div><div class="card-face card-back"><span class="hu-word">rózsaszín</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+        <div class="flashcard" data-word="fehér"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">⚪</span><span class="eng-word">white</span></div><div class="card-face card-back"><span class="hu-word">fehér</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+        <div class="flashcard" data-word="fekete"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">⚫</span><span class="eng-word">black</span></div><div class="card-face card-back"><span class="hu-word">fekete</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+        <div class="flashcard" data-word="barna"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">🟤</span><span class="eng-word">brown</span></div><div class="card-face card-back"><span class="hu-word">barna</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+      </div>
+    </div>
+
+    <!-- ANIMALS -->
+    <div class="tab-panel" id="tab-animals">
+      <div class="flash-grid">
+        <div class="flashcard" data-word="kutya"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">🐶</span><span class="eng-word">dog</span></div><div class="card-face card-back"><span class="hu-word">kutya</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+        <div class="flashcard" data-word="macska"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">🐱</span><span class="eng-word">cat</span></div><div class="card-face card-back"><span class="hu-word">macska</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+        <div class="flashcard" data-word="ló"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">🐴</span><span class="eng-word">horse</span></div><div class="card-face card-back"><span class="hu-word">ló</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+        <div class="flashcard" data-word="tehén"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">🐄</span><span class="eng-word">cow</span></div><div class="card-face card-back"><span class="hu-word">tehén</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+        <div class="flashcard" data-word="disznó"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">🐷</span><span class="eng-word">pig</span></div><div class="card-face card-back"><span class="hu-word">disznó</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+        <div class="flashcard" data-word="birka"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">🐑</span><span class="eng-word">sheep</span></div><div class="card-face card-back"><span class="hu-word">birka</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+        <div class="flashcard" data-word="csirke"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">🐔</span><span class="eng-word">chicken</span></div><div class="card-face card-back"><span class="hu-word">csirke</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+        <div class="flashcard" data-word="hal"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">🐟</span><span class="eng-word">fish</span></div><div class="card-face card-back"><span class="hu-word">hal</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+        <div class="flashcard" data-word="madár"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">🐦</span><span class="eng-word">bird</span></div><div class="card-face card-back"><span class="hu-word">madár</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+        <div class="flashcard" data-word="egér"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">🐭</span><span class="eng-word">mouse</span></div><div class="card-face card-back"><span class="hu-word">egér</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+      </div>
+    </div>
+
+    <!-- FAMILY -->
+    <div class="tab-panel" id="tab-family">
+      <div class="flash-grid">
+        <div class="flashcard" data-word="anya"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">👩</span><span class="eng-word">mom</span></div><div class="card-face card-back"><span class="hu-word">anya</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+        <div class="flashcard" data-word="apa"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">👨</span><span class="eng-word">dad</span></div><div class="card-face card-back"><span class="hu-word">apa</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+        <div class="flashcard" data-word="testvér"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">🧒</span><span class="eng-word">sibling</span></div><div class="card-face card-back"><span class="hu-word">testvér</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+        <div class="flashcard" data-word="nagymama"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">👵</span><span class="eng-word">grandma</span></div><div class="card-face card-back"><span class="hu-word">nagymama</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+        <div class="flashcard" data-word="nagypapa"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">👴</span><span class="eng-word">grandpa</span></div><div class="card-face card-back"><span class="hu-word">nagypapa</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+        <div class="flashcard" data-word="baba"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">👶</span><span class="eng-word">baby</span></div><div class="card-face card-back"><span class="hu-word">baba</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+        <div class="flashcard" data-word="család"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">👨‍👩‍👧‍👦</span><span class="eng-word">family</span></div><div class="card-face card-back"><span class="hu-word">család</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+      </div>
+    </div>
+
+    <!-- FOOD -->
+    <div class="tab-panel" id="tab-food">
+      <div class="flash-grid">
+        <div class="flashcard" data-word="kenyér"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">🍞</span><span class="eng-word">bread</span></div><div class="card-face card-back"><span class="hu-word">kenyér</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+        <div class="flashcard" data-word="sajt"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">🧀</span><span class="eng-word">cheese</span></div><div class="card-face card-back"><span class="hu-word">sajt</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+        <div class="flashcard" data-word="tej"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">🥛</span><span class="eng-word">milk</span></div><div class="card-face card-back"><span class="hu-word">tej</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+        <div class="flashcard" data-word="víz"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">💧</span><span class="eng-word">water</span></div><div class="card-face card-back"><span class="hu-word">víz</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+        <div class="flashcard" data-word="leves"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">🍲</span><span class="eng-word">soup</span></div><div class="card-face card-back"><span class="hu-word">leves</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+        <div class="flashcard" data-word="sütemény"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">🍰</span><span class="eng-word">cake</span></div><div class="card-face card-back"><span class="hu-word">sütemény</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+        <div class="flashcard" data-word="méz"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">🍯</span><span class="eng-word">honey</span></div><div class="card-face card-back"><span class="hu-word">méz</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+        <div class="flashcard" data-word="gyümölcs"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">🍇</span><span class="eng-word">fruit</span></div><div class="card-face card-back"><span class="hu-word">gyümölcs</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+      </div>
+    </div>
+
+    <!-- GREETINGS -->
+    <div class="tab-panel" id="tab-greetings">
+      <div class="flash-grid">
+        <div class="flashcard" data-word="szia"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">👋</span><span class="eng-word">hi / bye</span></div><div class="card-face card-back"><span class="hu-word">szia</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+        <div class="flashcard" data-word="jó reggelt"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">🌅</span><span class="eng-word">good morning</span></div><div class="card-face card-back"><span class="hu-word">jó reggelt</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+        <div class="flashcard" data-word="jó éjszakát"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">🌙</span><span class="eng-word">good night</span></div><div class="card-face card-back"><span class="hu-word">jó éjszakát</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+        <div class="flashcard" data-word="köszönöm"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">🙏</span><span class="eng-word">thank you</span></div><div class="card-face card-back"><span class="hu-word">köszönöm</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+        <div class="flashcard" data-word="kérem"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">🤲</span><span class="eng-word">please</span></div><div class="card-face card-back"><span class="hu-word">kérem</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+        <div class="flashcard" data-word="igen"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">✅</span><span class="eng-word">yes</span></div><div class="card-face card-back"><span class="hu-word">igen</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+        <div class="flashcard" data-word="nem"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">❌</span><span class="eng-word">no</span></div><div class="card-face card-back"><span class="hu-word">nem</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+        <div class="flashcard" data-word="viszlát"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">🚶</span><span class="eng-word">goodbye</span></div><div class="card-face card-back"><span class="hu-word">viszlát</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top:40px;">
+      <a class="btn" href="calendar.html" style="background:var(--plum); box-shadow:0 4px 0 #4d2143;">Tovább a hónapokhoz! Next: Months →</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>🌻 Tanuljunk Magyarul! — készült szeretettel gyerekeknek.</p>
+    <p><a href="index.html">Vissza a főoldalra / Back to home</a></p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

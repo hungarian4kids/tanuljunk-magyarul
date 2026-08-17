@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Magyar ABC — Tanuljunk Magyarul!</title>
+<meta name="description" content="Ismerd meg a magyar ábécét képekkel és kiejtéssel.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Ugrás a tartalomhoz</a>
+
+<header class="site-header">
+  <div class="container">
+    <a class="logo" href="index.html">
+      <svg class="logo-flower" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="20" cy="20" r="5" fill="var(--yellow)"/>
+        <path d="M20 15 C16 15 15 10 20 6 C25 10 24 15 20 15Z" fill="var(--paprika)"/>
+        <path d="M20 25 C16 25 15 30 20 34 C25 30 24 25 20 25Z" fill="var(--paprika)"/>
+        <path d="M15 20 C15 16 10 15 6 20 C10 25 15 24 15 20Z" fill="var(--green)"/>
+        <path d="M25 20 C25 16 30 15 34 20 C30 25 25 24 25 20Z" fill="var(--green)"/>
+      </svg>
+      Tanuljunk Magyarul!
+    </a>
+    <nav class="main-nav" aria-label="Fő navigáció">
+      <a href="index.html">🏠 Főoldal</a>
+      <a href="abc.html" aria-current="page">🔤 ABC</a>
+      <a href="numbers.html">🔢 Számok</a>
+      <a href="words.html">🗣️ Szavak</a>
+      <a href="calendar.html">📅 Hónapok</a>
+    </nav>
+  </div>
+</header>
+
+<div class="folk-border" aria-hidden="true">
+  <svg viewBox="0 0 240 26" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <pattern id="tulipPattern2" width="60" height="26" patternUnits="userSpaceOnUse">
+        <path d="M10 24 C10 16 6 14 6 9 C6 5 10 3 12 3 C14 3 18 5 18 9 C18 14 14 16 14 24 Z" fill="var(--paprika)"/>
+        <circle cx="31" cy="13" r="5" fill="var(--blue)"/>
+        <path d="M46 24 C46 17 42.5 16 42.5 11.5 C42.5 8 46 6 48 6 C50 6 53.5 8 53.5 11.5 C53.5 16 50 17 50 24 Z" fill="var(--green)"/>
+        <circle cx="12" cy="25.5" r="2" fill="var(--yellow)"/>
+      </pattern>
+    </defs>
+    <rect width="240" height="26" fill="url(#tulipPattern2)"/>
+  </svg>
+</div>
+
+<main id="main">
+  <section class="page-section container">
+    <div class="section-intro">
+      <h1>🔤 Magyar ABC</h1>
+      <p>Click any letter tile to hear the word and see what it means in English. Hungarian has some special letters English doesn't — like <strong>sz, cs, gy</strong> and letters with little marks over them, like <strong>á, é, ő</strong>.</p>
+    </div>
+
+    <div class="tile-grid">
+      <button class="tile" data-word="alma"><span class="big-letter">A a</span><span class="tile-emoji">🍎</span><span class="tile-word">alma</span><span class="tile-eng">apple</span></button>
+      <button class="tile" data-word="ág"><span class="big-letter">Á á</span><span class="tile-emoji">🌿</span><span class="tile-word">ág</span><span class="tile-eng">branch</span></button>
+      <button class="tile" data-word="banán"><span class="big-letter">B b</span><span class="tile-emoji">🍌</span><span class="tile-word">banán</span><span class="tile-eng">banana</span></button>
+      <button class="tile" data-word="cica"><span class="big-letter">C c</span><span class="tile-emoji">🐱</span><span class="tile-word">cica</span><span class="tile-eng">kitten</span></button>
+      <button class="tile" data-word="csillag"><span class="big-letter">Cs cs</span><span class="tile-emoji">⭐</span><span class="tile-word">csillag</span><span class="tile-eng">star</span></button>
+      <button class="tile" data-word="dinnye"><span class="big-letter">D d</span><span class="tile-emoji">🍉</span><span class="tile-word">dinnye</span><span class="tile-eng">watermelon</span></button>
+      <button class="tile" data-word="edző"><span class="big-letter">Dz dz</span><span class="tile-emoji">🏋️</span><span class="tile-word">edző</span><span class="tile-eng">coach (e‑dz‑ő)</span></button>
+      <button class="tile" data-word="dzsungel"><span class="big-letter">Dzs dzs</span><span class="tile-emoji">🌴</span><span class="tile-word">dzsungel</span><span class="tile-eng">jungle</span></button>
+      <button class="tile" data-word="elefánt"><span class="big-letter">E e</span><span class="tile-emoji">🐘</span><span class="tile-word">elefánt</span><span class="tile-eng">elephant</span></button>
+      <button class="tile" data-word="édesség"><span class="big-letter">É é</span><span class="tile-emoji">🍬</span><span class="tile-word">édesség</span><span class="tile-eng">sweets</span></button>
+      <button class="tile" data-word="fa"><span class="big-letter">F f</span><span class="tile-emoji">🌳</span><span class="tile-word">fa</span><span class="tile-eng">tree</span></button>
+      <button class="tile" data-word="gomba"><span class="big-letter">G g</span><span class="tile-emoji">🍄</span><span class="tile-word">gomba</span><span class="tile-eng">mushroom</span></button>
+      <button class="tile" data-word="gyerek"><span class="big-letter">Gy gy</span><span class="tile-emoji">🧒</span><span class="tile-word">gyerek</span><span class="tile-eng">child</span></button>
+      <button class="tile" data-word="ház"><span class="big-letter">H h</span><span class="tile-emoji">🏠</span><span class="tile-word">ház</span><span class="tile-eng">house</span></button>
+      <button class="tile" data-word="iskola"><span class="big-letter">I i</span><span class="tile-emoji">🏫</span><span class="tile-word">iskola</span><span class="tile-eng">school</span></button>
+      <button class="tile" data-word="íj"><span class="big-letter">Í í</span><span class="tile-emoji">🏹</span><span class="tile-word">íj</span><span class="tile-eng">bow</span></button>
+      <button class="tile" data-word="joghurt"><span class="big-letter">J j</span><span class="tile-emoji">🥣</span><span class="tile-word">joghurt</span><span class="tile-eng">yogurt</span></button>
+      <button class="tile" data-word="kutya"><span class="big-letter">K k</span><span class="tile-emoji">🐶</span><span class="tile-word">kutya</span><span class="tile-eng">dog</span></button>
+      <button class="tile" data-word="labda"><span class="big-letter">L l</span><span class="tile-emoji">⚽</span><span class="tile-word">labda</span><span class="tile-eng">ball</span></button>
+      <button class="tile" data-word="lyuk"><span class="big-letter">Ly ly</span><span class="tile-emoji">🕳️</span><span class="tile-word">lyuk</span><span class="tile-eng">hole</span></button>
+      <button class="tile" data-word="majom"><span class="big-letter">M m</span><span class="tile-emoji">🐒</span><span class="tile-word">majom</span><span class="tile-eng">monkey</span></button>
+      <button class="tile" data-word="nap"><span class="big-letter">N n</span><span class="tile-emoji">☀️</span><span class="tile-word">nap</span><span class="tile-eng">sun / day</span></button>
+      <button class="tile" data-word="nyuszi"><span class="big-letter">Ny ny</span><span class="tile-emoji">🐰</span><span class="tile-word">nyuszi</span><span class="tile-eng">bunny</span></button>
+      <button class="tile" data-word="olló"><span class="big-letter">O o</span><span class="tile-emoji">✂️</span><span class="tile-word">olló</span><span class="tile-eng">scissors</span></button>
+      <button class="tile" data-word="óra"><span class="big-letter">Ó ó</span><span class="tile-emoji">🕐</span><span class="tile-word">óra</span><span class="tile-eng">clock</span></button>
+      <button class="tile" data-word="örül"><span class="big-letter">Ö ö</span><span class="tile-emoji">😊</span><span class="tile-word">örül</span><span class="tile-eng">is happy</span></button>
+      <button class="tile" data-word="őz"><span class="big-letter">Ő ő</span><span class="tile-emoji">🦌</span><span class="tile-word">őz</span><span class="tile-eng">deer</span></button>
+      <button class="tile" data-word="pillangó"><span class="big-letter">P p</span><span class="tile-emoji">🦋</span><span class="tile-word">pillangó</span><span class="tile-eng">butterfly</span></button>
+      <button class="tile" data-word="róka"><span class="big-letter">R r</span><span class="tile-emoji">🦊</span><span class="tile-word">róka</span><span class="tile-eng">fox</span></button>
+      <button class="tile" data-word="sajt"><span class="big-letter">S s</span><span class="tile-emoji">🧀</span><span class="tile-word">sajt</span><span class="tile-eng">cheese</span></button>
+      <button class="tile" data-word="szivárvány"><span class="big-letter">Sz sz</span><span class="tile-emoji">🌈</span><span class="tile-word">szivárvány</span><span class="tile-eng">rainbow</span></button>
+      <button class="tile" data-word="teknős"><span class="big-letter">T t</span><span class="tile-emoji">🐢</span><span class="tile-word">teknős</span><span class="tile-eng">turtle</span></button>
+      <button class="tile" data-word="tyúk"><span class="big-letter">Ty ty</span><span class="tile-emoji">🐔</span><span class="tile-word">tyúk</span><span class="tile-eng">hen</span></button>
+      <button class="tile" data-word="uborka"><span class="big-letter">U u</span><span class="tile-emoji">🥒</span><span class="tile-word">uborka</span><span class="tile-eng">cucumber</span></button>
+      <button class="tile" data-word="úszik"><span class="big-letter">Ú ú</span><span class="tile-emoji">🏊</span><span class="tile-word">úszik</span><span class="tile-eng">swims</span></button>
+      <button class="tile" data-word="üveg"><span class="big-letter">Ü ü</span><span class="tile-emoji">🍾</span><span class="tile-word">üveg</span><span class="tile-eng">bottle</span></button>
+      <button class="tile" data-word="űr"><span class="big-letter">Ű ű</span><span class="tile-emoji">🚀</span><span class="tile-word">űr</span><span class="tile-eng">space</span></button>
+      <button class="tile" data-word="virág"><span class="big-letter">V v</span><span class="tile-emoji">🌸</span><span class="tile-word">virág</span><span class="tile-eng">flower</span></button>
+      <button class="tile" data-word="zebra"><span class="big-letter">Z z</span><span class="tile-emoji">🦓</span><span class="tile-word">zebra</span><span class="tile-eng">zebra</span></button>
+      <button class="tile" data-word="zsiráf"><span class="big-letter">Zs zs</span><span class="tile-emoji">🦒</span><span class="tile-word">zsiráf</span><span class="tile-eng">giraffe</span></button>
+    </div>
+
+    <p class="center-note">🔊 Tip: click a tile to hear it, click again to hide the English word. (Q, W, X and Y only appear in foreign words in Hungarian, so we've left them out!)</p>
+
+    <div style="text-align:center; margin-top:30px;">
+      <a class="btn btn-blue" href="numbers.html">Tovább a számokhoz! Next: Numbers →</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>🌻 Tanuljunk Magyarul! — készült szeretettel gyerekeknek.</p>
+    <p><a href="index.html">Vissza a főoldalra / Back to home</a></p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

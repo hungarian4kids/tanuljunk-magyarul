@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Számok — Tanuljunk Magyarul!</title>
+<meta name="description" content="Tanuld meg a magyar számokat 0-tól 20-ig, és játssz a számolós játékkal.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Ugrás a tartalomhoz</a>
+
+<header class="site-header">
+  <div class="container">
+    <a class="logo" href="index.html">
+      <svg class="logo-flower" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="20" cy="20" r="5" fill="var(--yellow)"/>
+        <path d="M20 15 C16 15 15 10 20 6 C25 10 24 15 20 15Z" fill="var(--paprika)"/>
+        <path d="M20 25 C16 25 15 30 20 34 C25 30 24 25 20 25Z" fill="var(--paprika)"/>
+        <path d="M15 20 C15 16 10 15 6 20 C10 25 15 24 15 20Z" fill="var(--green)"/>
+        <path d="M25 20 C25 16 30 15 34 20 C30 25 25 24 25 20Z" fill="var(--green)"/>
+      </svg>
+      Tanuljunk Magyarul!
+    </a>
+    <nav class="main-nav" aria-label="Fő navigáció">
+      <a href="index.html">🏠 Főoldal</a>
+      <a href="abc.html">🔤 ABC</a>
+      <a href="numbers.html" aria-current="page">🔢 Számok</a>
+      <a href="words.html">🗣️ Szavak</a>
+      <a href="calendar.html">📅 Hónapok</a>
+    </nav>
+  </div>
+</header>
+
+<div class="folk-border" aria-hidden="true">
+  <svg viewBox="0 0 240 26" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <pattern id="tulipPattern3" width="60" height="26" patternUnits="userSpaceOnUse">
+        <path d="M10 24 C10 16 6 14 6 9 C6 5 10 3 12 3 C14 3 18 5 18 9 C18 14 14 16 14 24 Z" fill="var(--paprika)"/>
+        <circle cx="31" cy="13" r="5" fill="var(--blue)"/>
+        <path d="M46 24 C46 17 42.5 16 42.5 11.5 C42.5 8 46 6 48 6 C50 6 53.5 8 53.5 11.5 C53.5 16 50 17 50 24 Z" fill="var(--green)"/>
+        <circle cx="12" cy="25.5" r="2" fill="var(--yellow)"/>
+      </pattern>
+    </defs>
+    <rect width="240" height="26" fill="url(#tulipPattern3)"/>
+  </svg>
+</div>
+
+<main id="main">
+  <section class="page-section container">
+    <div class="section-intro">
+      <h1>🔢 Számok</h1>
+      <p>Click a number to hear it and count the apples! Then scroll down for a counting game.</p>
+    </div>
+
+    <div class="tile-grid">
+      <button class="tile" data-word="nulla"><span class="big-letter">0</span><span class="tile-emoji">🚫</span><span class="tile-word">nulla</span><span class="tile-eng">zero</span></button>
+      <button class="tile" data-word="egy"><span class="big-letter">1</span><span class="tile-emoji">🍎</span><span class="tile-word">egy</span><span class="tile-eng">one</span></button>
+      <button class="tile" data-word="kettő"><span class="big-letter">2</span><span class="tile-emoji">🍎🍎</span><span class="tile-word">kettő</span><span class="tile-eng">two</span></button>
+      <button class="tile" data-word="három"><span class="big-letter">3</span><span class="tile-emoji">🍎🍎🍎</span><span class="tile-word">három</span><span class="tile-eng">three</span></button>
+      <button class="tile" data-word="négy"><span class="big-letter">4</span><span class="tile-emoji">🍎🍎🍎🍎</span><span class="tile-word">négy</span><span class="tile-eng">four</span></button>
+      <button class="tile" data-word="öt"><span class="big-letter">5</span><span class="tile-emoji" style="font-size:1.1rem;">🍎🍎🍎🍎🍎</span><span class="tile-word">öt</span><span class="tile-eng">five</span></button>
+      <button class="tile" data-word="hat"><span class="big-letter">6</span><span class="tile-emoji" style="font-size:1rem;">🍎🍎🍎🍎🍎🍎</span><span class="tile-word">hat</span><span class="tile-eng">six</span></button>
+      <button class="tile" data-word="hét"><span class="big-letter">7</span><span class="tile-emoji" style="font-size:0.95rem;">🍎🍎🍎🍎🍎🍎🍎</span><span class="tile-word">hét</span><span class="tile-eng">seven</span></button>
+      <button class="tile" data-word="nyolc"><span class="big-letter">8</span><span class="tile-emoji" style="font-size:0.85rem;">🍎🍎🍎🍎🍎🍎🍎🍎</span><span class="tile-word">nyolc</span><span class="tile-eng">eight</span></button>
+      <button class="tile" data-word="kilenc"><span class="big-letter">9</span><span class="tile-emoji" style="font-size:0.78rem;">🍎🍎🍎🍎🍎🍎🍎🍎🍎</span><span class="tile-word">kilenc</span><span class="tile-eng">nine</span></button>
+      <button class="tile" data-word="tíz"><span class="big-letter">10</span><span class="tile-emoji" style="font-size:0.72rem;">🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎</span><span class="tile-word">tíz</span><span class="tile-eng">ten</span></button>
+      <button class="tile" data-word="tizenegy"><span class="big-letter">11</span><span class="tile-emoji">🍎 × 11</span><span class="tile-word">tizenegy</span><span class="tile-eng">eleven</span></button>
+      <button class="tile" data-word="tizenkettő"><span class="big-letter">12</span><span class="tile-emoji">🍎 × 12</span><span class="tile-word">tizenkettő</span><span class="tile-eng">twelve</span></button>
+      <button class="tile" data-word="tizenhárom"><span class="big-letter">13</span><span class="tile-emoji">🍎 × 13</span><span class="tile-word">tizenhárom</span><span class="tile-eng">thirteen</span></button>
+      <button class="tile" data-word="tizennégy"><span class="big-letter">14</span><span class="tile-emoji">🍎 × 14</span><span class="tile-word">tizennégy</span><span class="tile-eng">fourteen</span></button>
+      <button class="tile" data-word="tizenöt"><span class="big-letter">15</span><span class="tile-emoji">🍎 × 15</span><span class="tile-word">tizenöt</span><span class="tile-eng">fifteen</span></button>
+      <button class="tile" data-word="tizenhat"><span class="big-letter">16</span><span class="tile-emoji">🍎 × 16</span><span class="tile-word">tizenhat</span><span class="tile-eng">sixteen</span></button>
+      <button class="tile" data-word="tizenhét"><span class="big-letter">17</span><span class="tile-emoji">🍎 × 17</span><span class="tile-word">tizenhét</span><span class="tile-eng">seventeen</span></button>
+      <button class="tile" data-word="tizennyolc"><span class="big-letter">18</span><span class="tile-emoji">🍎 × 18</span><span class="tile-word">tizennyolc</span><span class="tile-eng">eighteen</span></button>
+      <button class="tile" data-word="tizenkilenc"><span class="big-letter">19</span><span class="tile-emoji">🍎 × 19</span><span class="tile-word">tizenkilenc</span><span class="tile-eng">nineteen</span></button>
+      <button class="tile" data-word="húsz"><span class="big-letter">20</span><span class="tile-emoji">🍎 × 20</span><span class="tile-word">húsz</span><span class="tile-eng">twenty</span></button>
+    </div>
+
+    <h2 style="text-align:center; margin-top:50px;">🐰 Számoljunk! Let's count!</h2>
+    <p class="center-note" style="margin-top:0;">Count the pictures and pick the correct Hungarian word.</p>
+    <div class="quiz-box" id="quiz-box"></div>
+
+    <div style="text-align:center; margin-top:40px;">
+      <a class="btn btn-green" href="words.html">Tovább a szavakhoz! Next: Words →</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>🌻 Tanuljunk Magyarul! — készült szeretettel gyerekeknek.</p>
+    <p><a href="index.html">Vissza a főoldalra / Back to home</a></p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+<script>
+  const quizData = [
+    { visual: '🐰🐰', answer: 'kettő', options: ['kettő', 'négy', 'egy'] },
+    { visual: '🐰🐰🐰', answer: 'három', options: ['öt', 'három', 'hat'] },
+    { visual: '🐰', answer: 'egy', options: ['egy', 'kettő', 'tíz'] },
+    { visual: '🐰🐰🐰🐰🐰', answer: 'öt', options: ['négy', 'nyolc', 'öt'] },
+    { visual: '🐰🐰🐰🐰🐰🐰🐰', answer: 'hét', options: ['hét', 'hat', 'kilenc'] },
+    { visual: '🐰🐰🐰🐰', answer: 'négy', options: ['három', 'négy', 'öt'] },
+    { visual: '🐰🐰🐰🐰🐰🐰', answer: 'hat', options: ['hat', 'hét', 'tíz'] },
+    { visual: '🐰🐰🐰🐰🐰🐰🐰🐰🐰🐰', answer: 'tíz', options: ['kilenc', 'húsz', 'tíz'] }
+  ];
+  document.addEventListener('DOMContentLoaded', () => {
+    initQuiz(quizData, { prompt: 'Hány nyuszi van? How many bunnies?' });
+  });
+</script>
+</body>
+</html>
