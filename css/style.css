@@ -1,6 +1,6 @@
-/* =========================================================
-   Tanuljunk Magyarul! — design system
-   Inspired by Hungarian folk embroidery (Kalocsa / Matyó):
+* =========================================================
+   Tanuljunk Magyarul! â€” design system
+   Inspired by Hungarian folk embroidery (Kalocsa / MatyÃ³):
    warm cream ground, paprika red, meadow green, cornflower
    blue and sunflower yellow, arranged in bold flower motifs.
    ========================================================= */
@@ -326,6 +326,7 @@ p { margin: 0 0 1em; }
 }
 
 .tile .tile-emoji { font-size: 1.9rem; display: block; margin: 6px 0 4px; }
+.tile .tile-emoji svg { width: 44px; height: 44px; display: block; margin: 0 auto; }
 
 .tile .tile-word {
   font-weight: 700;
@@ -337,11 +338,11 @@ p { margin: 0 0 1em; }
 .tile .tile-eng {
   font-size: 0.82rem;
   color: var(--ink-soft);
-  display: none;
+  display: block;
   margin-top: 4px;
+  font-style: italic;
 }
 
-.tile.revealed .tile-eng { display: block; }
 .tile.revealed { background: var(--cream-dark); }
 
 .tile.playing {
