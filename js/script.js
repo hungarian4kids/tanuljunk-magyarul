@@ -34,24 +34,39 @@ function speakHungarian(text) {
 
    Accented filenames (á, é, ő...) can be stored on disk in two
    different but visually-identical Unicode forms — precomposed
-   (NFC) or decomposed (NFD). A file uploaded from a Mac is often
-   NFD under the hood even though it displays as "á.mp3" everywhere.
-   To avoid needing anyone to know or care about this, we just try
-   both forms before giving up and falling back to spoken text. */
+   (NFC) or decomposed (NFD) — and the browser doesn't always
+   percent-encode them correctly on its own when building the
+   request. So we try both Unicode forms, AND make sure each one
+   is explicitly percent-encoded (encodeURIComponent) before
+   asking the browser to fetch it, and only fall back to spoken
+   text if every combination fails. */
 function playPronunciation(word, audioPath) {
   if (!audioPath) {
     if (word) speakHungarian(word);
     return;
   }
-  const candidates = [audioPath];
+
+  const folder = audioPath.substring(0, audioPath.lastIndexOf('/') + 1);
+  const filename = audioPath.substring(audioPath.lastIndexOf('/') + 1);
+
+  const nameForms = [filename];
   try {
-    const nfc = audioPath.normalize('NFC');
-    const nfd = audioPath.normalize('NFD');
-    if (!candidates.includes(nfc)) candidates.push(nfc);
-    if (!candidates.includes(nfd)) candidates.push(nfd);
+    const nfc = filename.normalize('NFC');
+    const nfd = filename.normalize('NFD');
+    if (!nameForms.includes(nfc)) nameForms.push(nfc);
+    if (!nameForms.includes(nfd)) nameForms.push(nfd);
   } catch (e) {
-    /* normalize() unsupported — just try the one path we have */
+    /* normalize() unsupported — just use the one form we have */
   }
+
+  const candidates = [];
+  nameForms.forEach(name => {
+    const encoded = folder + encodeURIComponent(name);
+    const raw = folder + name;
+    if (!candidates.includes(encoded)) candidates.push(encoded);
+    if (!candidates.includes(raw)) candidates.push(raw);
+  });
+
   tryAudioCandidates(candidates, 0, word);
 }
 
