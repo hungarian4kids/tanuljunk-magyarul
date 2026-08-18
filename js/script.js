@@ -30,18 +30,43 @@ function speakHungarian(text) {
 
 /* Plays a recorded mp3 if one is given; falls back to the
    browser's spoken-word guess if the file is missing or the
-   audio fails to load (e.g. a typo in the filename). */
+   audio fails to load (e.g. a typo in the filename).
+
+   Accented filenames (á, é, ő...) can be stored on disk in two
+   different but visually-identical Unicode forms — precomposed
+   (NFC) or decomposed (NFD). A file uploaded from a Mac is often
+   NFD under the hood even though it displays as "á.mp3" everywhere.
+   To avoid needing anyone to know or care about this, we just try
+   both forms before giving up and falling back to spoken text. */
 function playPronunciation(word, audioPath) {
-  if (audioPath) {
-    try {
-      const player = new Audio(audioPath);
-      player.play().catch(() => { if (word) speakHungarian(word); });
-      return;
-    } catch (e) {
-      /* fall through to speech synthesis below */
-    }
+  if (!audioPath) {
+    if (word) speakHungarian(word);
+    return;
   }
-  if (word) speakHungarian(word);
+  const candidates = [audioPath];
+  try {
+    const nfc = audioPath.normalize('NFC');
+    const nfd = audioPath.normalize('NFD');
+    if (!candidates.includes(nfc)) candidates.push(nfc);
+    if (!candidates.includes(nfd)) candidates.push(nfd);
+  } catch (e) {
+    /* normalize() unsupported — just try the one path we have */
+  }
+  tryAudioCandidates(candidates, 0, word);
+}
+
+function tryAudioCandidates(paths, index, word) {
+  if (index >= paths.length) {
+    if (word) speakHungarian(word);
+    return;
+  }
+  const player = new Audio(paths[index]);
+  player.addEventListener('error', () => tryAudioCandidates(paths, index + 1, word), { once: true });
+  player.play().catch(() => {
+    /* play() can reject for reasons unrelated to a missing file
+       (e.g. a very fast double-click); the 'error' listener above
+       is what actually detects a genuinely missing file. */
+  });
 }
 
 /* ---------- Tiles: click to reveal English + hear the word ---------- */
