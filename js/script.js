@@ -3,11 +3,15 @@
    No build tools, no dependencies: plain JS for GitHub Pages.
    ========================================================= */
 
-/* ---------- Hungarian pronunciation (best effort) ----------
-   Uses the browser's built-in Web Speech API. Many browsers
-   don't ship a Hungarian voice, so this fails silently and the
-   printed word is still there to read — audio is a bonus, not
-   a requirement. */
+/* ---------- Hungarian pronunciation ----------
+   Two ways a tile can be "spoken":
+   1. A real recorded mp3 (data-audio="audio/abc/á.mp3") — always
+      preferred, since it's an actual human voice.
+   2. The browser's built-in Web Speech API as a fallback, for any
+      word that doesn't have a recording yet. Many browsers don't
+      ship a Hungarian voice, so this fails silently and the printed
+      word is still there to read — audio is a bonus, not a
+      requirement. */
 function speakHungarian(text) {
   if (!('speechSynthesis' in window)) return;
   try {
@@ -24,17 +28,34 @@ function speakHungarian(text) {
   }
 }
 
+/* Plays a recorded mp3 if one is given; falls back to the
+   browser's spoken-word guess if the file is missing or the
+   audio fails to load (e.g. a typo in the filename). */
+function playPronunciation(word, audioPath) {
+  if (audioPath) {
+    try {
+      const player = new Audio(audioPath);
+      player.play().catch(() => { if (word) speakHungarian(word); });
+      return;
+    } catch (e) {
+      /* fall through to speech synthesis below */
+    }
+  }
+  if (word) speakHungarian(word);
+}
+
 /* ---------- Tiles: click to reveal English + hear the word ---------- */
 function initTiles() {
   document.querySelectorAll('.tile').forEach(tile => {
     tile.setAttribute('tabindex', '0');
     tile.setAttribute('role', 'button');
     const word = tile.dataset.word;
+    const audioPath = tile.dataset.audio;
     tile.addEventListener('click', () => {
       tile.classList.toggle('revealed');
       tile.classList.add('playing');
       setTimeout(() => tile.classList.remove('playing'), 500);
-      if (word) speakHungarian(word);
+      playPronunciation(word, audioPath);
     });
     tile.addEventListener('keydown', (e) => {
       if (e.key === 'Enter' || e.key === ' ') {
@@ -50,10 +71,11 @@ function initFlashcards() {
   document.querySelectorAll('.flashcard').forEach(card => {
     const btn = card.querySelector('button');
     const word = card.dataset.word;
+    const audioPath = card.dataset.audio;
     btn.addEventListener('click', () => {
       const wasFlipped = card.classList.contains('flipped');
       card.classList.toggle('flipped');
-      if (!wasFlipped && word) speakHungarian(word);
+      if (!wasFlipped) playPronunciation(word, audioPath);
     });
   });
 }
