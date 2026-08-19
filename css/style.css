@@ -429,6 +429,7 @@ p { margin: 0 0 1em; }
   background: var(--paper);
 }
 .card-front .emoji { font-size: 2.6rem; margin-bottom: 8px; }
+.card-front .emoji svg { width: 46px; height: 46px; display: block; margin: 0 auto; }
 .card-front .eng-word { font-family: var(--font-display); font-weight: 700; color: var(--ink); font-size: 1.05rem; }
 
 .card-back {
@@ -531,6 +532,65 @@ p { margin: 0 0 1em; }
   margin-top: 26px;
 }
 
+/* ---------- Phrase cards (Iskola page: Hasznos mondatok) ---------- */
+.phrase-section { margin-bottom: 36px; }
+.phrase-section h3 {
+  font-size: 1.15rem;
+  color: var(--blue-dark);
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.phrase-list { display: flex; flex-direction: column; gap: 10px; }
+.phrase-card {
+  background: var(--paper);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft);
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.phrase-card .phrase-text { flex: 1; min-width: 200px; }
+.phrase-card .phrase-hu {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.08rem;
+  color: var(--ink);
+}
+.phrase-card .phrase-en {
+  color: var(--ink-soft);
+  font-style: italic;
+  font-size: 0.9rem;
+  margin-top: 2px;
+}
+
+/* ---------- Info cards (Iskola page: Amit jó előre tudni) ---------- */
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+.info-card {
+  background: var(--paper);
+  border-radius: var(--radius-lg);
+  padding: 22px 24px;
+  box-shadow: var(--shadow-soft);
+  border-left: 6px solid var(--card-accent, var(--blue));
+}
+.info-card h3 {
+  font-size: 1.1rem;
+  color: var(--ink);
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.info-card p { color: var(--ink-soft); font-size: 0.95rem; margin-bottom: 0; }
+.info-card p + p { margin-top: 8px; }
 /* ---------- Reduced motion ---------- */
 @media (prefers-reduced-motion: reduce) {
   * { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; scroll-behavior: auto !important; }

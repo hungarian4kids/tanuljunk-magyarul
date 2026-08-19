@@ -214,10 +214,20 @@ function initQuiz(quizData, opts) {
   render();
 }
 
+/* ---------- Standalone speak buttons (e.g. phrase cards) ---------- */
+function initSpeakButtons() {
+  document.querySelectorAll('.speak-btn').forEach(btn => {
+    const text = btn.dataset.text;
+    const audioPath = btn.dataset.audio;
+    btn.addEventListener('click', () => playPronunciation(text, audioPath));
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   initTiles();
   initFlashcards();
   initTabs();
+  initSpeakButtons();
   // Chrome loads voices asynchronously — this just warms the list up.
   if ('speechSynthesis' in window) {
     window.speechSynthesis.getVoices();

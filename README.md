@@ -20,6 +20,23 @@ később szeretnél saját (pl. Canva-ban készített) képeket hozzáadni, hozz
 sorra.
 
 ## Kiejtés
-A szavak kiejtését a böngésző saját, beépített felolvasó funkciója adja (Web Speech API).
-Nem minden eszközön van magyar hang telepítve — ha egy gyerek rákattint egy szóra és nem
-hall semmit, ez teljesen normális, a leírt szó akkor is ott van.
+Az `abc.html` oldal saját, ebbe a repóba feltöltött hangfelvételeket használ (nem külső
+oldalról linkelve — az megbízhatatlannak bizonyult ékezetes fájlneveknél). Ehhez létre kell
+hozni egy `audio/abc/` mappát a repo gyökerében, és abba kell feltölteni mind a 44 betűnév
+mp3 fájlt (pl. `a.mp3`, `á.mp3`, `bé.mp3`, `csé.mp3` stb. — pontosan úgy elnevezve, ahogy
+nálad vannak).
+
+A repo gyökerében van egy `.nojekyll` nevű, szándékosan üres fájl is — ez kikapcsolja a
+GitHub Pages beépített Jekyll feldolgozását, ami ékezetes fájlneveknél (pl. `á.mp3`) hibásan
+tud viselkedni. Ezt a fájlt ne töröld.
+
+A GitHub-on a legegyszerűbb módja a feltöltésnek: nyisd meg közvetlenül ezt a címet a
+böngésződben (cseréld ki a saját felhasználóneved/repo neved szerint), és a fájlok pont a
+jó helyre kerülnek feltöltéskor:
+
+`https://github.com/[felhasználóneved]/[repo-neved]/upload/main/audio/abc`
+
+Azokon az oldalakon, ahol nincs hangfelvétel (számok, szavak, hónapok), az oldal
+továbbra is a böngésző saját, beépített felolvasó funkcióját használja (Web Speech API)
+tartalék megoldásként. Nem minden eszközön van magyar hang telepítve — ha egy gyerek
+rákattint egy szóra és nem hall semmit, ez teljesen normális, a leírt szó akkor is ott van.

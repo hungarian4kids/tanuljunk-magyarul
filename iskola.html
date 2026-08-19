@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Iskola — Tanuljunk Magyarul!</title>
+<meta name="description" content="Iskolai szókincs, tantárgyak, hasznos mondatok és tudnivalók a magyar iskolába való beilleszkedéshez.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Ugrás a tartalomhoz</a>
+
+<header class="site-header">
+  <div class="container">
+    <a class="logo" href="index.html">
+      <svg class="logo-flower" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="20" cy="20" r="5" fill="var(--yellow)"/>
+        <path d="M20 15 C16 15 15 10 20 6 C25 10 24 15 20 15Z" fill="var(--paprika)"/>
+        <path d="M20 25 C16 25 15 30 20 34 C25 30 24 25 20 25Z" fill="var(--paprika)"/>
+        <path d="M15 20 C15 16 10 15 6 20 C10 25 15 24 15 20Z" fill="var(--green)"/>
+        <path d="M25 20 C25 16 30 15 34 20 C30 25 25 24 25 20Z" fill="var(--green)"/>
+      </svg>
+      Tanuljunk Magyarul!
+    </a>
+    <nav class="main-nav" aria-label="Fő navigáció">
+      <a href="index.html">🏠 Főoldal</a>
+      <a href="abc.html">🔤 ABC</a>
+      <a href="numbers.html">🔢 Számok</a>
+      <a href="words.html">🗣️ Szavak</a>
+      <a href="calendar.html">📅 Hónapok</a>
+      <a href="iskola.html" aria-current="page">🏫 Iskola</a>
+    </nav>
+  </div>
+</header>
+
+<div class="folk-border" aria-hidden="true">
+  <svg viewBox="0 0 240 26" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <pattern id="tulipPattern6" width="60" height="26" patternUnits="userSpaceOnUse">
+        <path d="M10 24 C10 16 6 14 6 9 C6 5 10 3 12 3 C14 3 18 5 18 9 C18 14 14 16 14 24 Z" fill="var(--paprika)"/>
+        <circle cx="31" cy="13" r="5" fill="var(--blue)"/>
+        <path d="M46 24 C46 17 42.5 16 42.5 11.5 C42.5 8 46 6 48 6 C50 6 53.5 8 53.5 11.5 C53.5 16 50 17 50 24 Z" fill="var(--green)"/>
+        <circle cx="12" cy="25.5" r="2" fill="var(--yellow)"/>
+      </pattern>
+    </defs>
+    <rect width="240" height="26" fill="url(#tulipPattern6)"/>
+  </svg>
+</div>
+
+<main id="main">
+  <section class="page-section container">
+    <div class="section-intro">
+      <h1>🏫 Iskola</h1>
+      <p>Getting ready for a Hungarian school? Here's the vocabulary, phrases, and everyday know-how that will help you feel at home from day one.</p>
+    </div>
+
+    <div class="tabs" role="tablist" aria-label="Iskolai témák">
+      <button class="tab-btn" role="tab" data-tab="tab-subjects" aria-selected="true">📚 Tantárgyak</button>
+      <button class="tab-btn" role="tab" data-tab="tab-classroom" aria-selected="false">🖍️ A tanteremben</button>
+      <button class="tab-btn" role="tab" data-tab="tab-phrases" aria-selected="false">💬 Hasznos mondatok</button>
+      <button class="tab-btn" role="tab" data-tab="tab-know" aria-selected="false">💡 Amit jó előre tudni</button>
+    </div>
+
+    <!-- TANTÁRGYAK -->
+    <div class="tab-panel active" id="tab-subjects">
+      <div class="flash-grid">
+        <div class="flashcard" data-word="matematika"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">🔢</span><span class="eng-word">math</span></div><div class="card-face card-back"><span class="hu-word">matematika</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+        <div class="flashcard" data-word="magyar nyelv és irodalom"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">📖</span><span class="eng-word">Hungarian language &amp; literature</span></div><div class="card-face card-back"><span class="hu-word">magyar nyelv és irodalom</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+        <div class="flashcard" data-word="környezetismeret"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">🌱</span><span class="eng-word">environmental studies</span></div><div class="card-face card-back"><span class="hu-word">környezetismeret</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+        <div class="flashcard" data-word="testnevelés"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">🤸</span><span class="eng-word">PE / gym</span></div><div class="card-face card-back"><span class="hu-word">testnevelés</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+        <div class="flashcard" data-word="ének-zene"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">🎵</span><span class="eng-word">music</span></div><div class="card-face card-back"><span class="hu-word">ének-zene</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+        <div class="flashcard" data-word="rajz és vizuális kultúra"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">🎨</span><span class="eng-word">art</span></div><div class="card-face card-back"><span class="hu-word">rajz és vizuális kultúra</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+        <div class="flashcard" data-word="technika és tervezés"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">🔧</span><span class="eng-word">technology &amp; design</span></div><div class="card-face card-back"><span class="hu-word">technika és tervezés</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+        <div class="flashcard" data-word="etika"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">❤️</span><span class="eng-word">ethics / religion</span></div><div class="card-face card-back"><span class="hu-word">etika / hittan</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+        <div class="flashcard" data-word="angol nyelv"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">🗣️</span><span class="eng-word">English class</span></div><div class="card-face card-back"><span class="hu-word">angol nyelv</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+      </div>
+    </div>
+
+    <!-- A TANTEREMBEN -->
+    <div class="tab-panel" id="tab-classroom">
+      <div class="flash-grid">
+        <div class="flashcard" data-word="füzet"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">📓</span><span class="eng-word">notebook</span></div><div class="card-face card-back"><span class="hu-word">füzet</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+        <div class="flashcard" data-word="tolltartó"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji"><svg viewBox="0 0 64 64"><path d="M10 24c0-4 3-7 7-7h30c4 0 7 3 7 7v16c0 4-3 7-7 7H17c-4 0-7-3-7-7z" fill="#2074A6" stroke="#144F72" stroke-width="2.5" stroke-linejoin="round"/><circle cx="32" cy="32" r="4" fill="#F3B93B" stroke="#C98F1C" stroke-width="2"/><path d="M32 20v-6M32 50v6" stroke="#144F72" stroke-width="2" stroke-linecap="round"/></svg></span><span class="eng-word">pencil case</span></div><div class="card-face card-back"><span class="hu-word">tolltartó</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+        <div class="flashcard" data-word="ceruza"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">✏️</span><span class="eng-word">pencil</span></div><div class="card-face card-back"><span class="hu-word">ceruza</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+        <div class="flashcard" data-word="radír"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji"><svg viewBox="0 0 64 64"><rect x="12" y="22" width="40" height="22" rx="6" fill="#D4537E" stroke="#993556" stroke-width="2.5"/><rect x="12" y="22" width="40" height="10" rx="5" fill="#fff" opacity="0.85"/><circle cx="24" cy="38" r="1.8" fill="#993556"/><circle cx="34" cy="39" r="1.8" fill="#993556"/></svg></span><span class="eng-word">eraser</span></div><div class="card-face card-back"><span class="hu-word">radír</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+        <div class="flashcard" data-word="vonalzó"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">📏</span><span class="eng-word">ruler</span></div><div class="card-face card-back"><span class="hu-word">vonalzó</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+        <div class="flashcard" data-word="toll"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">🖊️</span><span class="eng-word">pen</span></div><div class="card-face card-back"><span class="hu-word">toll</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+        <div class="flashcard" data-word="táska"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">🎒</span><span class="eng-word">backpack</span></div><div class="card-face card-back"><span class="hu-word">táska</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+        <div class="flashcard" data-word="pad"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji"><svg viewBox="0 0 64 64"><rect x="8" y="24" width="48" height="8" rx="3" fill="#8B5E34" stroke="#6B4423" stroke-width="2.5"/><rect x="12" y="32" width="8" height="18" rx="2" fill="#6B4423"/><rect x="44" y="32" width="8" height="18" rx="2" fill="#6B4423"/><rect x="20" y="34" width="24" height="8" rx="2" fill="#F3B93B" stroke="#C98F1C" stroke-width="2"/></svg></span><span class="eng-word">desk</span></div><div class="card-face card-back"><span class="hu-word">pad</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+        <div class="flashcard" data-word="szék"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji">🪑</span><span class="eng-word">chair</span></div><div class="card-face card-back"><span class="hu-word">szék</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+        <div class="flashcard" data-word="tábla"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji"><svg viewBox="0 0 64 64"><rect x="8" y="12" width="48" height="32" rx="4" fill="#3F8A5B" stroke="#2A6640" stroke-width="2.5"/><path d="M16 22h20M16 28h14M16 34h24" stroke="#fff" stroke-width="2" stroke-linecap="round" opacity="0.85"/><rect x="8" y="44" width="48" height="6" rx="2" fill="#8B5E34" stroke="#6B4423" stroke-width="2"/><rect x="30" y="46" width="6" height="3" fill="#fff"/></svg></span><span class="eng-word">blackboard</span></div><div class="card-face card-back"><span class="hu-word">tábla</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+        <div class="flashcard" data-word="ellenőrző"><button><div class="card-inner"><div class="card-face card-front"><span class="emoji"><svg viewBox="0 0 64 64"><rect x="14" y="8" width="36" height="48" rx="3" fill="#7A3364" stroke="#4D2143" stroke-width="2.5"/><rect x="20" y="16" width="24" height="4" rx="2" fill="#fff" opacity="0.7"/><rect x="20" y="24" width="16" height="3" rx="1.5" fill="#fff" opacity="0.5"/><path d="M40 8v14l-4-3-4 3V8z" fill="#F3B93B" stroke="#C98F1C" stroke-width="2" stroke-linejoin="round"/></svg></span><span class="eng-word">report book</span></div><div class="card-face card-back"><span class="hu-word">ellenőrző</span><span class="say-hint">🔊 tap to hear</span></div></div></button></div>
+      </div>
+      <p class="center-note">💡 The <strong>ellenőrző</strong> is a small booklet every Hungarian student carries — teachers write grades, notes, and messages to parents in it. There isn't really a US equivalent, so it's worth asking about on the first day!</p>
+    </div>
+
+    <!-- HASZNOS MONDATOK -->
+    <div class="tab-panel" id="tab-phrases">
+      <p class="section-intro" style="max-width:680px; margin:0 auto 28px; text-align:center; color:var(--ink-soft);">These full sentences will help far more than single words — tap the speaker to hear each one.</p>
+
+      <div class="phrase-section">
+        <h3>🤔 Segítségkérés <span style="font-weight:400; font-size:0.85rem; color:var(--ink-soft);">(Asking for help)</span></h3>
+        <div class="phrase-list">
+          <div class="phrase-card"><div class="phrase-text"><div class="phrase-hu">Nem értem.</div><div class="phrase-en">I don't understand.</div></div><button class="btn-sound speak-btn" data-text="Nem értem.">🔊</button></div>
+          <div class="phrase-card"><div class="phrase-text"><div class="phrase-hu">Elmondanád még egyszer, kérlek?</div><div class="phrase-en">Could you say that again, please?</div></div><button class="btn-sound speak-btn" data-text="Elmondanád még egyszer, kérlek?">🔊</button></div>
+          <div class="phrase-card"><div class="phrase-text"><div class="phrase-hu">Hogy mondják ezt magyarul?</div><div class="phrase-en">How do you say this in Hungarian?</div></div><button class="btn-sound speak-btn" data-text="Hogy mondják ezt magyarul?">🔊</button></div>
+          <div class="phrase-card"><div class="phrase-text"><div class="phrase-hu">Leírnád, kérlek?</div><div class="phrase-en">Could you write it down, please?</div></div><button class="btn-sound speak-btn" data-text="Leírnád, kérlek?">🔊</button></div>
+        </div>
+      </div>
+
+      <div class="phrase-section">
+        <h3>🙋 Alapvető szükségletek <span style="font-weight:400; font-size:0.85rem; color:var(--ink-soft);">(Basic needs)</span></h3>
+        <div class="phrase-list">
+          <div class="phrase-card"><div class="phrase-text"><div class="phrase-hu">Kimehetek a mosdóba?</div><div class="phrase-en">Can I go to the bathroom?</div></div><button class="btn-sound speak-btn" data-text="Kimehetek a mosdóba?">🔊</button></div>
+          <div class="phrase-card"><div class="phrase-text"><div class="phrase-hu">Ihatok egy kis vizet?</div><div class="phrase-en">Can I have some water?</div></div><button class="btn-sound speak-btn" data-text="Ihatok egy kis vizet?">🔊</button></div>
+          <div class="phrase-card"><div class="phrase-text"><div class="phrase-hu">Rosszul érzem magam.</div><div class="phrase-en">I don't feel well.</div></div><button class="btn-sound speak-btn" data-text="Rosszul érzem magam.">🔊</button></div>
+          <div class="phrase-card"><div class="phrase-text"><div class="phrase-hu">Elfelejtettem a füzetemet.</div><div class="phrase-en">I forgot my notebook.</div></div><button class="btn-sound speak-btn" data-text="Elfelejtettem a füzetemet.">🔊</button></div>
+        </div>
+      </div>
+
+      <div class="phrase-section">
+        <h3>🤝 Barátkozás <span style="font-weight:400; font-size:0.85rem; color:var(--ink-soft);">(Making friends)</span></h3>
+        <div class="phrase-list">
+          <div class="phrase-card"><div class="phrase-text"><div class="phrase-hu">Szia, hogy hívnak?</div><div class="phrase-en">Hi, what's your name?</div></div><button class="btn-sound speak-btn" data-text="Szia, hogy hívnak?">🔊</button></div>
+          <div class="phrase-card"><div class="phrase-text"><div class="phrase-hu">Játszhatok veletek?</div><div class="phrase-en">Can I play with you?</div></div><button class="btn-sound speak-btn" data-text="Játszhatok veletek?">🔊</button></div>
+          <div class="phrase-card"><div class="phrase-text"><div class="phrase-hu">Ez az enyém.</div><div class="phrase-en">This is mine.</div></div><button class="btn-sound speak-btn" data-text="Ez az enyém.">🔊</button></div>
+          <div class="phrase-card"><div class="phrase-text"><div class="phrase-hu">Szeretnél a barátom lenni?</div><div class="phrase-en">Would you like to be my friend?</div></div><button class="btn-sound speak-btn" data-text="Szeretnél a barátom lenni?">🔊</button></div>
+        </div>
+      </div>
+
+      <div class="phrase-section">
+        <h3>✋ Óra alatt <span style="font-weight:400; font-size:0.85rem; color:var(--ink-soft);">(During class)</span></h3>
+        <div class="phrase-list">
+          <div class="phrase-card"><div class="phrase-text"><div class="phrase-hu">Jelentkezhetek?</div><div class="phrase-en">May I raise my hand?</div></div><button class="btn-sound speak-btn" data-text="Jelentkezhetek?">🔊</button></div>
+          <div class="phrase-card"><div class="phrase-text"><div class="phrase-hu">Nem tudom a választ.</div><div class="phrase-en">I don't know the answer.</div></div><button class="btn-sound speak-btn" data-text="Nem tudom a választ.">🔊</button></div>
+          <div class="phrase-card"><div class="phrase-text"><div class="phrase-hu">Befejeztem.</div><div class="phrase-en">I'm finished.</div></div><button class="btn-sound speak-btn" data-text="Befejeztem.">🔊</button></div>
+          <div class="phrase-card"><div class="phrase-text"><div class="phrase-hu">Kaphatok még egy percet?</div><div class="phrase-en">Can I have one more minute?</div></div><button class="btn-sound speak-btn" data-text="Kaphatok még egy percet?">🔊</button></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- AMIT JÓ ELŐRE TUDNI -->
+    <div class="tab-panel" id="tab-know">
+      <div class="info-grid">
+        <div class="info-card" style="--card-accent: var(--paprika);">
+          <h3>🙇 Hogyan szólítsd a tanítót/tanárt</h3>
+          <p>Younger grades usually have one main teacher, called <strong>tanító néni</strong> (female) or <strong>tanító bácsi</strong> (male). Older grades have subject teachers: <strong>tanár néni / tanár úr</strong>.</p>
+          <p>Hungarian kids often speak to adults using a polite "tetszik" construction instead of just asking directly — e.g. instead of "Kimehetek?", you'll often hear <strong>"Kimehetek, tanító néni?"</strong> or the softer <strong>"Szabad kimennem?"</strong> It's not required to master this right away, but it's good to recognize.</p>
+        </div>
+        <div class="info-card" style="--card-accent: var(--blue);">
+          <h3>🔔 Csengetés és szünet</h3>
+          <p>A bell (<strong>csengő</strong>) rings at the start and end of every class period (<strong>óra</strong>). Between classes there's a short break (<strong>szünet</strong>) — usually 10 minutes, with one longer break for lunch.</p>
+        </div>
+        <div class="info-card" style="--card-accent: var(--green);">
+          <h3>🔢 Osztályzás</h3>
+          <p>Hungarian schools grade on a <strong>1–5 scale</strong>, where <strong>5 (jeles)</strong> is the best grade and <strong>1 (elégtelen)</strong> means failing — the opposite direction from an A–F scale!</p>
+        </div>
+        <div class="info-card" style="--card-accent: var(--plum);">
+          <h3>📓 Házi feladat és ellenőrző</h3>
+          <p>Homework is <strong>házi feladat</strong>, often written on the board at the end of class. Grades and teacher notes go into the <strong>ellenőrző</strong> (report booklet) — it's important to bring it every day and show it to a parent.</p>
+        </div>
+        <div class="info-card" style="--card-accent: var(--yellow-dark);">
+          <h3>🍽️ Menza</h3>
+          <p>School lunch is called <strong>menza</strong>. Many schools also offer a mid-morning snack break. If your child has food preferences or allergies, it's worth mentioning to the teacher early on.</p>
+        </div>
+        <div class="info-card" style="--card-accent: var(--blue-dark);">
+          <h3>✋ Jelentkezés</h3>
+          <p>To answer or ask a question, students raise a hand — this is called <strong>jelentkezés</strong>. Calling out without raising a hand is generally discouraged, a bit more formally than in many US classrooms.</p>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top:40px;">
+      <a class="btn" href="index.html">🏠 Vissza a főoldalra! Back to home</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>🌻 Tanuljunk Magyarul! — készült szeretettel gyerekeknek.</p>
+    <p><a href="index.html">Vissza a főoldalra / Back to home</a></p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
