@@ -430,6 +430,13 @@ p { margin: 0 0 1em; }
 }
 .card-front .emoji { font-size: 2.6rem; margin-bottom: 8px; }
 .card-front .emoji svg { width: 46px; height: 46px; display: block; margin: 0 auto; }
+
+/* ---------- Larger faces on the Érzelmek page ---------- */
+.emotion-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+.emotion-grid .flashcard { height: 210px; }
+.emotion-grid .card-front .emoji svg { width: 108px; height: 108px; margin-bottom: 2px; }
+.emotion-grid .card-front .eng-word { font-size: 1rem; }
+.emotion-grid .card-back .hu-word { font-size: 1.25rem; }
 .card-front .eng-word { font-family: var(--font-display); font-weight: 700; color: var(--ink); font-size: 1.05rem; }
 
 .card-back {
