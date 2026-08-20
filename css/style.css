@@ -525,7 +525,8 @@ p { margin: 0 0 1em; }
   align-items: center;
 }
 .holiday-card .holiday-illustration { width: 100%; border-radius: var(--radius-md); overflow: hidden; }
-.holiday-card .holiday-illustration svg { width: 100%; height: auto; display: block; }
+.holiday-card .holiday-illustration svg,
+.holiday-card .holiday-illustration img { width: 100%; height: auto; display: block; object-fit: cover; }
 .holiday-card .holiday-body h3 {
   font-size: 1.4rem;
   margin-bottom: 2px;

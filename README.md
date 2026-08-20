@@ -40,3 +40,9 @@ Azokon az oldalakon, ahol nincs hangfelvétel (számok, szavak, hónapok), az ol
 továbbra is a böngésző saját, beépített felolvasó funkcióját használja (Web Speech API)
 tartalék megoldásként. Nem minden eszközön van magyar hang telepítve — ha egy gyerek
 rákattint egy szóra és nem hall semmit, ez teljesen normális, a leírt szó akkor is ott van.
+
+## Saját képek az ünnepekhez
+Az `unnepek.html` oldal a `images/unnepek/` mappából tölti be a hét ünnep illusztrációját.
+Ha saját képet szeretnél feltölteni, ezekkel a pontos fájlnevekkel kell felkerülniük:
+`mikulas.png`, `karacsony.png`, `farsang.png`, `husvet.png`, `anyaknapja.png`,
+`gyermeknap.png`, `augusztus20.png`.
