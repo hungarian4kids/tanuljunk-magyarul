@@ -512,6 +512,45 @@ p { margin: 0 0 1em; }
   margin-top: 10px;
 }
 
+/* ---------- Holiday cards (Ünnepek page) ---------- */
+.holiday-card {
+  background: var(--paper);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  padding: 20px;
+  margin-bottom: 22px;
+  display: grid;
+  grid-template-columns: minmax(220px, 340px) 1fr;
+  gap: 22px;
+  align-items: center;
+}
+.holiday-card .holiday-illustration { width: 100%; border-radius: var(--radius-md); overflow: hidden; }
+.holiday-card .holiday-illustration svg { width: 100%; height: auto; display: block; }
+.holiday-card .holiday-body h3 {
+  font-size: 1.4rem;
+  margin-bottom: 2px;
+}
+.holiday-card .holiday-date {
+  color: var(--ink-soft);
+  font-weight: 700;
+  font-family: var(--font-display);
+  font-size: 0.92rem;
+  margin-bottom: 10px;
+}
+.holiday-card .holiday-text-hu { font-size: 1.02rem; margin-bottom: 10px; }
+.holiday-card .holiday-text-en { font-style: italic; color: var(--ink-soft); font-size: 0.95rem; margin-bottom: 10px; }
+.holiday-card .school-tip {
+  background: var(--cream-dark);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+  margin-top: 6px;
+}
+
+@media (max-width: 700px) {
+  .holiday-card { grid-template-columns: 1fr; }
+}
 /* ---------- Footer ---------- */
 .site-footer {
   background: var(--ink);
