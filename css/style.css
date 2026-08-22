@@ -786,12 +786,13 @@ body.show-en .en-block { display: block; }
 .video-embed {
   position: relative;
   width: 100%;
-  max-width: 700px;
+  max-width: 900px;
   aspect-ratio: 16 / 9;
   margin: 0 auto 20px;
   border-radius: var(--radius-md);
   overflow: hidden;
   box-shadow: var(--shadow-soft);
+  display: block;
 }
 .video-embed iframe {
   position: absolute;
