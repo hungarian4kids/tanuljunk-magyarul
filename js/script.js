@@ -140,9 +140,9 @@ function initTabs() {
    { visual: '🍎🍎🍎', answer: 'három', options: ['egy','három','öt'] }
    Renders one question at a time into #quiz-box. */
 function initQuiz(quizData, opts) {
-  const box = document.getElementById('quiz-box');
-  if (!box || !quizData || !quizData.length) return;
   opts = opts || {};
+  const box = document.getElementById(opts.containerId || 'quiz-box');
+  if (!box || !quizData || !quizData.length) return;
   let index = 0;
   let score = 0;
   let order = shuffle([...quizData.keys()]);
@@ -223,11 +223,21 @@ function initSpeakButtons() {
   });
 }
 
+/* ---------- English translation toggle (Olvasás page) ---------- */
+function initTranslationToggle() {
+  const toggle = document.getElementById('en-toggle');
+  if (!toggle) return;
+  toggle.addEventListener('change', () => {
+    document.body.classList.toggle('show-en', toggle.checked);
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   initTiles();
   initFlashcards();
   initTabs();
   initSpeakButtons();
+  initTranslationToggle();
   // Chrome loads voices asynchronously — this just warms the list up.
   if ('speechSynthesis' in window) {
     window.speechSynthesis.getVoices();

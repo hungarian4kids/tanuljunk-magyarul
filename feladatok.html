@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nyelvtani Feladatok — Tanuljunk Magyarul!</title>
+<meta name="description" content="Interaktív magyar nyelvtani gyakorlatok gyerekeknek: toldalékok, tárgyeset, melléknévfokozás.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Ugrás a tartalomhoz</a>
+
+<header class="site-header">
+  <div class="container">
+    <a class="logo" href="index.html">
+      <svg class="logo-flower" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="20" cy="20" r="5" fill="var(--yellow)"/>
+        <path d="M20 15 C16 15 15 10 20 6 C25 10 24 15 20 15Z" fill="var(--paprika)"/>
+        <path d="M20 25 C16 25 15 30 20 34 C25 30 24 25 20 25Z" fill="var(--paprika)"/>
+        <path d="M15 20 C15 16 10 15 6 20 C10 25 15 24 15 20Z" fill="var(--green)"/>
+        <path d="M25 20 C25 16 30 15 34 20 C30 25 25 24 25 20Z" fill="var(--green)"/>
+      </svg>
+      Tanuljunk Magyarul!
+    </a>
+    <nav class="main-nav" aria-label="Fő navigáció">
+      <a href="index.html">🏠 Főoldal</a>
+      <a href="abc.html">🔤 ABC</a>
+      <a href="numbers.html">🔢 Számok</a>
+      <a href="words.html">🗣️ Szavak</a>
+      <a href="calendar.html">📅 Hónapok</a>
+      <a href="iskola.html">🏫 Iskola</a>
+      <a href="erzelmek.html">😊 Érzelmek</a>
+      <a href="unnepek.html">🎉 Ünnepek</a>
+      <a href="gyakorlas.html" aria-current="page">📝 Gyakorlás</a>
+    </nav>
+  </div>
+</header>
+
+<div class="folk-border" aria-hidden="true">
+  <svg viewBox="0 0 240 26" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <pattern id="tulipPattern11" width="60" height="26" patternUnits="userSpaceOnUse">
+        <path d="M10 24 C10 16 6 14 6 9 C6 5 10 3 12 3 C14 3 18 5 18 9 C18 14 14 16 14 24 Z" fill="var(--paprika)"/>
+        <circle cx="31" cy="13" r="5" fill="var(--blue)"/>
+        <path d="M46 24 C46 17 42.5 16 42.5 11.5 C42.5 8 46 6 48 6 C50 6 53.5 8 53.5 11.5 C53.5 16 50 17 50 24 Z" fill="var(--green)"/>
+        <circle cx="12" cy="25.5" r="2" fill="var(--yellow)"/>
+      </pattern>
+    </defs>
+    <rect width="240" height="26" fill="url(#tulipPattern11)"/>
+  </svg>
+</div>
+
+<main id="main">
+  <section class="page-section container">
+    <div class="section-intro">
+      <h1>✏️ Nyelvtani Feladatok</h1>
+      <p><a href="gyakorlas.html">← Vissza a Gyakorláshoz</a></p>
+      <p>Fill in the blank with the correct form. Tap an answer to see if you're right!</p>
+    </div>
+
+    <h2 style="text-align:center; margin-top:10px;">📍 Toldalékok <span style="font-weight:400; font-size:0.85rem; color:var(--ink-soft);">(Suffixes — where is it?)</span></h2>
+    <p class="exercise-intro">Hungarian doesn't use words like "in" or "on" the way English does — instead, a little ending attaches to the noun itself.</p>
+    <div class="quiz-box" id="quiz-suffix"></div>
+
+    <h2 style="text-align:center; margin-top:50px;">🎯 Tárgyeset <span style="font-weight:400; font-size:0.85rem; color:var(--ink-soft);">(Direct object — the "-t" ending)</span></h2>
+    <p class="exercise-intro">When something is on the receiving end of an action ("I see the <em>dog</em>"), Hungarian marks it with a <strong>-t</strong> ending.</p>
+    <div class="quiz-box" id="quiz-targy"></div>
+
+    <h2 style="text-align:center; margin-top:50px;">📏 Melléknevek fokozása <span style="font-weight:400; font-size:0.85rem; color:var(--ink-soft);">(Comparing adjectives)</span></h2>
+    <p class="exercise-intro">To say something is "more" (-bb) or "the most" (leg- + -bb), Hungarian adjectives change shape too.</p>
+    <div class="quiz-box" id="quiz-melleknev"></div>
+
+    <div style="text-align:center; margin-top:40px;">
+      <a class="btn btn-green" href="olvasas.html">← Vissza az olvasáshoz</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>🌻 Tanuljunk magyarul, gyerekek!</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+<script>
+  const suffixQuiz = [
+    { visual: '<span style="font-size:1.25rem;letter-spacing:normal;">A kutya a kert___ szalad.</span>', answer: 'kertben', options: ['kertben', 'kertban', 'kerten', 'kerttől'] },
+    { visual: '<span style="font-size:1.25rem;letter-spacing:normal;">A labda a doboz___ van.</span>', answer: 'dobozban', options: ['dobozban', 'dobozben', 'dobozról', 'dobozzal'] },
+    { visual: '<span style="font-size:1.25rem;letter-spacing:normal;">Az iskola a város___ van.</span>', answer: 'városban', options: ['városban', 'városben', 'városba', 'városból'] },
+    { visual: '<span style="font-size:1.25rem;letter-spacing:normal;">A könyv az asztal___ van.</span>', answer: 'asztalon', options: ['asztalon', 'asztalban', 'asztalnak', 'asztalról'] }
+  ];
+
+  const targyQuiz = [
+    { visual: '<span style="font-size:1.25rem;letter-spacing:normal;">Szeretem a ___.</span>', answer: 'kutyát', options: ['kutyát', 'kutya', 'kutyák', 'kutyás'] },
+    { visual: '<span style="font-size:1.25rem;letter-spacing:normal;">Anya süt egy ___.</span>', answer: 'kalácsot', options: ['kalácsot', 'kalács', 'kalácsban', 'kalácsé'] },
+    { visual: '<span style="font-size:1.25rem;letter-spacing:normal;">Olvasom a ___.</span>', answer: 'könyvet', options: ['könyvet', 'könyv', 'könyvben', 'könyvnek'] },
+    { visual: '<span style="font-size:1.25rem;letter-spacing:normal;">Látjuk a ___.</span>', answer: 'tanárt', options: ['tanárt', 'tanár', 'tanárnak', 'tanárban'] }
+  ];
+
+  const mellekQuiz = [
+    { visual: '<span style="font-size:1.15rem;letter-spacing:normal;">A kutya nagy, de az elefánt ___.</span>', answer: 'nagyobb', options: ['nagyobb', 'legnagyobb', 'nagy', 'nagyabb'] },
+    { visual: '<span style="font-size:1.15rem;letter-spacing:normal;">Ő a ___ gyerek az osztályban.</span>', answer: 'legjobb', options: ['legjobb', 'jobb', 'jó', 'jobban'] },
+    { visual: '<span style="font-size:1.15rem;letter-spacing:normal;">Január a ___ hónap.</span>', answer: 'leghidegebb', options: ['leghidegebb', 'hidegebb', 'hideg', 'hidegen'] },
+    { visual: '<span style="font-size:1.15rem;letter-spacing:normal;">Ez a ceruza rövid, az a ceruza ___.</span>', answer: 'hosszabb', options: ['hosszabb', 'leghosszabb', 'hosszú', 'hosszan'] }
+  ];
+
+  document.addEventListener('DOMContentLoaded', () => {
+    initQuiz(suffixQuiz, { prompt: 'Melyik szó illik a mondatba?', containerId: 'quiz-suffix' });
+    initQuiz(targyQuiz, { prompt: 'Melyik szó illik a mondatba?', containerId: 'quiz-targy' });
+    initQuiz(mellekQuiz, { prompt: 'Melyik szó illik a mondatba?', containerId: 'quiz-melleknev' });
+  });
+</script>
+</body>
+</html>

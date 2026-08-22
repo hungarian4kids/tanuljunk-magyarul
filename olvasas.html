@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Olvasási Gyakorlat — Tanuljunk Magyarul!</title>
+<meta name="description" content="Kétnyelvű magyar olvasmányok gyerekeknek: kutyák, macskák és iskolai történetek, kérdésekkel.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Ugrás a tartalomhoz</a>
+
+<header class="site-header">
+  <div class="container">
+    <a class="logo" href="index.html">
+      <svg class="logo-flower" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="20" cy="20" r="5" fill="var(--yellow)"/>
+        <path d="M20 15 C16 15 15 10 20 6 C25 10 24 15 20 15Z" fill="var(--paprika)"/>
+        <path d="M20 25 C16 25 15 30 20 34 C25 30 24 25 20 25Z" fill="var(--paprika)"/>
+        <path d="M15 20 C15 16 10 15 6 20 C10 25 15 24 15 20Z" fill="var(--green)"/>
+        <path d="M25 20 C25 16 30 15 34 20 C30 25 25 24 25 20Z" fill="var(--green)"/>
+      </svg>
+      Tanuljunk Magyarul!
+    </a>
+    <nav class="main-nav" aria-label="Fő navigáció">
+      <a href="index.html">🏠 Főoldal</a>
+      <a href="abc.html">🔤 ABC</a>
+      <a href="numbers.html">🔢 Számok</a>
+      <a href="words.html">🗣️ Szavak</a>
+      <a href="calendar.html">📅 Hónapok</a>
+      <a href="iskola.html">🏫 Iskola</a>
+      <a href="erzelmek.html">😊 Érzelmek</a>
+      <a href="unnepek.html">🎉 Ünnepek</a>
+      <a href="gyakorlas.html" aria-current="page">📝 Gyakorlás</a>
+    </nav>
+  </div>
+</header>
+
+<div class="folk-border" aria-hidden="true">
+  <svg viewBox="0 0 240 26" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <pattern id="tulipPattern10" width="60" height="26" patternUnits="userSpaceOnUse">
+        <path d="M10 24 C10 16 6 14 6 9 C6 5 10 3 12 3 C14 3 18 5 18 9 C18 14 14 16 14 24 Z" fill="var(--paprika)"/>
+        <circle cx="31" cy="13" r="5" fill="var(--blue)"/>
+        <path d="M46 24 C46 17 42.5 16 42.5 11.5 C42.5 8 46 6 48 6 C50 6 53.5 8 53.5 11.5 C53.5 16 50 17 50 24 Z" fill="var(--green)"/>
+        <circle cx="12" cy="25.5" r="2" fill="var(--yellow)"/>
+      </pattern>
+    </defs>
+    <rect width="240" height="26" fill="url(#tulipPattern10)"/>
+  </svg>
+</div>
+
+<main id="main">
+  <section class="page-section container">
+    <div class="section-intro">
+      <h1>📖 Olvasási Gyakorlat</h1>
+      <p><a href="gyakorlas.html">← Vissza a Gyakorláshoz</a></p>
+      <p>Read each story in Hungarian first — then flip on the English translation if you get stuck. Answer the questions at the end to check your understanding.</p>
+    </div>
+
+    <div class="translation-toggle-wrap">
+      <label class="translation-toggle">
+        <input type="checkbox" id="en-toggle">
+        <span>🇬🇧 Angol fordítás / Show English</span>
+      </label>
+    </div>
+
+    <div class="tabs" role="tablist" aria-label="Nehézségi szint">
+      <button class="tab-btn" role="tab" data-tab="tab-easy" aria-selected="true">🐶 Könnyű</button>
+      <button class="tab-btn" role="tab" data-tab="tab-hard" aria-selected="false">🏫 Nehezebb</button>
+    </div>
+
+    <!-- EASY -->
+    <div class="tab-panel active" id="tab-easy">
+
+      <div class="story-card">
+        <span class="difficulty-badge difficulty-easy">Könnyű</span>
+        <h2>Bogyó, a kíváncsi kutya</h2>
+        <p class="story-title-en en-block">Bogyó, the Curious Dog</p>
+
+        <div class="story-image-placeholder">
+          <span class="placeholder-icon">🖼️</span>
+          <span class="placeholder-text">Ide kerül a kép — javasolt fájlnév:<br><code>images/olvasas/bogyo.png</code></span>
+        </div>
+
+        <p class="story-text-hu">Bogyó egy kíváncsi kiskutya. Minden reggel kiszalad a kertbe, és szimatolni kezd. Ma egy piros labdát talál a fű alatt. Bogyó boldogan ugat, és a szájába veszi a labdát. Aztán bevágtat a házba, hogy megmutassa a gazdájának. — Ügyes vagy, Bogyó! — mondja a kislány, és megsimogatja a kutya fejét.</p>
+        <p class="story-text-en en-block">Bogyó is a curious little dog. Every morning he runs out into the garden and starts sniffing around. Today he finds a red ball under the grass. Bogyó barks happily and picks up the ball in his mouth. Then he dashes into the house to show his owner. "Good job, Bogyó!" says the little girl, patting the dog's head.</p>
+
+        <div class="story-questions">
+          <h4>❓ Kérdések</h4>
+          <ol>
+            <li>Hogy hívják a kutyát? <span class="q-en en-block">— What is the dog's name?</span></li>
+            <li>Mit talál Bogyó a kertben? <span class="q-en en-block">— What does Bogyó find in the garden?</span></li>
+            <li>Mit csinál Bogyó, amikor megtalálja a labdát? <span class="q-en en-block">— What does Bogyó do when he finds the ball?</span></li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="story-card">
+        <span class="difficulty-badge difficulty-easy">Könnyű</span>
+        <h2>Cirmos és a gombolyag</h2>
+        <p class="story-title-en en-block">Cirmos and the Ball of Yarn</p>
+
+        <div class="story-image-placeholder">
+          <span class="placeholder-icon">🖼️</span>
+          <span class="placeholder-text">Ide kerül a kép — javasolt fájlnév:<br><code>images/olvasas/cirmos.png</code></span>
+        </div>
+
+        <p class="story-text-hu">Cirmos egy szürke cica, aki szeret játszani. Egy nap talál egy piros gombolyagot a nappaliban. Elkezdi ütögetni a mancsával, és a gombolyag gurulni kezd. Cirmos utánaszalad, és próbálja elkapni. A fonál összegabalyodik a lábai körül, és Cirmos vicces bukfencet vet. A család nevet, és Cirmos is elégedetten dorombol.</p>
+        <p class="story-text-en en-block">Cirmos is a grey cat who loves to play. One day he finds a red ball of yarn in the living room. He starts batting it with his paw, and the ball begins to roll. Cirmos chases after it, trying to catch it. The yarn gets tangled around his legs, and Cirmos does a funny tumble. The family laughs, and Cirmos purrs contentedly too.</p>
+
+        <div class="story-questions">
+          <h4>❓ Kérdések</h4>
+          <ol>
+            <li>Milyen színű Cirmos? <span class="q-en en-block">— What color is Cirmos?</span></li>
+            <li>Mit talál Cirmos a nappaliban? <span class="q-en en-block">— What does Cirmos find in the living room?</span></li>
+            <li>Mi történik, amikor Cirmos utánaszalad a gombolyagnak? <span class="q-en en-block">— What happens when Cirmos chases the yarn?</span></li>
+          </ol>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- HARD -->
+    <div class="tab-panel" id="tab-hard">
+
+      <div class="story-card">
+        <span class="difficulty-badge difficulty-hard">Nehezebb</span>
+        <h2>Zsófi első napja</h2>
+        <p class="story-title-en en-block">Zsófi's First Day</p>
+
+        <div class="story-image-placeholder">
+          <span class="placeholder-icon">🖼️</span>
+          <span class="placeholder-text">Ide kerül a kép — javasolt fájlnév:<br><code>images/olvasas/zsofi.png</code></span>
+        </div>
+
+        <p class="story-text-hu">Zsófi izgatottan ébred: ma van az első napja az új magyar iskolájában. Amerikából költözött a családjával, és még nem ismeri az osztálytársait. Reggel felveszi a táskáját, és beleteszi a tolltartóját, a füzetét, meg egy almát. Az osztályteremben a tanító néni kedvesen köszönti, és egy padot mutat neki az ablak mellett. Szünetben egy kislány odalép hozzá, és megkérdezi: — Játszhatok veled? Zsófi bátran válaszol: — Igen, szívesen! Estére Zsófi már tud néhány új magyar szót, és van egy új barátja is.</p>
+        <p class="story-text-en en-block">Zsófi wakes up excited: today is her first day at her new Hungarian school. She moved from America with her family and doesn't know her classmates yet. In the morning she packs her backpack, putting in her pencil case, her notebook, and an apple. In the classroom, the teacher greets her kindly and shows her a desk by the window. During break, a little girl walks up to her and asks, "Can I play with you?" Zsófi answers bravely, "Yes, I'd love to!" By evening, Zsófi already knows a few new Hungarian words — and she has a new friend, too.</p>
+
+        <div class="story-questions">
+          <h4>❓ Kérdések</h4>
+          <ol>
+            <li>Honnan költözött Zsófi családja? <span class="q-en en-block">— Where did Zsófi's family move from?</span></li>
+            <li>Mit tesz Zsófi a táskájába? <span class="q-en en-block">— What does Zsófi put in her backpack?</span></li>
+            <li>Mit kérdez a kislány szünetben? <span class="q-en en-block">— What does the little girl ask during break?</span></li>
+            <li>Mit tanul meg Zsófi az első nap végére? <span class="q-en en-block">— What has Zsófi learned by the end of the first day?</span></li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="story-card">
+        <span class="difficulty-badge difficulty-hard">Nehezebb</span>
+        <h2>Az elveszett tolltartó</h2>
+        <p class="story-title-en en-block">The Lost Pencil Case</p>
+
+        <div class="story-image-placeholder">
+          <span class="placeholder-icon">🖼️</span>
+          <span class="placeholder-text">Ide kerül a kép — javasolt fájlnév:<br><code>images/olvasas/tolltarto.png</code></span>
+        </div>
+
+        <p class="story-text-hu">Balázs a szünetben észreveszi, hogy eltűnt a tolltartója. Pánikba esik: benne van a kedvenc kék tolla is! Megkérdezi a padtársát, de ő sem látta. Végül a tanító néni segít neki megkeresni. Kiderül, hogy a tolltartó a táskája alján volt egész idő alatt, egy könyv alá csúszott. Balázs megkönnyebbülten sóhajt, és megígéri, hogy legközelebb jobban odafigyel a holmijára.</p>
+        <p class="story-text-en en-block">During break, Balázs notices that his pencil case is missing. He panics — his favorite blue pen is inside! He asks his deskmate, but she hasn't seen it either. Finally, the teacher helps him look. It turns out the pencil case had been at the bottom of his backpack the whole time, slipped under a book. Balázs sighs with relief and promises to pay closer attention to his things next time.</p>
+
+        <div class="story-questions">
+          <h4>❓ Kérdések</h4>
+          <ol>
+            <li>Mit veszít el Balázs? <span class="q-en en-block">— What does Balázs lose?</span></li>
+            <li>Miért esik pánikba? <span class="q-en en-block">— Why does he panic?</span></li>
+            <li>Ki segít neki megkeresni? <span class="q-en en-block">— Who helps him look for it?</span></li>
+            <li>Hol találja meg végül a tolltartót? <span class="q-en en-block">— Where does he finally find the pencil case?</span></li>
+          </ol>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="text-align:center; margin-top:40px;">
+      <a class="btn" href="feladatok.html">Tovább a nyelvtani feladatokhoz! Next: Grammar exercises →</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>🌻 Tanuljunk magyarul, gyerekek!</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
