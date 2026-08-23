@@ -325,8 +325,8 @@ p { margin: 0 0 1em; }
   line-height: 1;
 }
 
-.tile .tile-emoji { font-size: 1.9rem; display: block; margin: 6px 0 4px; }
-.tile .tile-emoji svg { width: 44px; height: 44px; display: block; margin: 0 auto; }
+.tile .tile-emoji { font-size: 2.5rem; display: block; margin: 8px 0 6px; }
+.tile .tile-emoji svg { width: 60px; height: 60px; display: block; margin: 0 auto; }
 
 .tile .tile-word {
   font-weight: 700;
@@ -394,7 +394,7 @@ p { margin: 0 0 1em; }
 
 .flashcard {
   perspective: 900px;
-  height: 168px;
+  height: 200px;
 }
 .flashcard button {
   all: unset;
@@ -428,8 +428,8 @@ p { margin: 0 0 1em; }
 .card-front {
   background: var(--paper);
 }
-.card-front .emoji { font-size: 2.6rem; margin-bottom: 8px; }
-.card-front .emoji svg { width: 46px; height: 46px; display: block; margin: 0 auto; }
+.card-front .emoji { font-size: 3.4rem; margin-bottom: 8px; }
+.card-front .emoji svg { width: 64px; height: 64px; display: block; margin: 0 auto; }
 
 /* ---------- Larger faces on the Érzelmek page ---------- */
 .emotion-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
